@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bj5vjdgsxjoxl" path="res://assets/characters/3 Dude_Monster/Dude_Monster_Idle_4.png" id="4_46pi4"]
 [ext_resource type="Texture2D" uid="uid://2bt0gin1j3qv" path="res://assets/characters/3 Dude_Monster/Dude_Monster_Jump_8.png" id="5_6pm0c"]
 [ext_resource type="Texture2D" uid="uid://4fojdalexpkk" path="res://assets/characters/3 Dude_Monster/Dude_Monster_Walk_6.png" id="6_rw8fd"]
+[ext_resource type="Texture2D" uid="uid://e56lxd7bu0gk" path="res://assets/characters/3 Dude_Monster/Dude_Monster_Run_6.png" id="6_wqh4e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2wekh"]
 atlas = ExtResource("2_krmvd")
@@ -94,6 +95,30 @@ region = Rect2(192, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_s34en"]
 atlas = ExtResource("5_6pm0c")
 region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_46pi4"]
+atlas = ExtResource("6_wqh4e")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6pm0c"]
+atlas = ExtResource("6_wqh4e")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rw8fd"]
+atlas = ExtResource("6_wqh4e")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lktu3"]
+atlas = ExtResource("6_wqh4e")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1m0i"]
+atlas = ExtResource("6_wqh4e")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dt0hs"]
+atlas = ExtResource("6_wqh4e")
+region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qpqci"]
 atlas = ExtResource("6_rw8fd")
@@ -209,6 +234,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_46pi4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6pm0c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rw8fd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lktu3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1m0i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dt0hs")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_qpqci")
 }, {
 "duration": 1.0,
@@ -233,5 +281,7 @@ animations = [{
 
 [resource]
 script = ExtResource("1_8clwq")
+speed = 200.0
+jump_velocity = -500.0
 sprite_frames = SubResource("SpriteFrames_r62xi")
 metadata/_custom_type_script = "uid://bn7lb4plgaadx"
